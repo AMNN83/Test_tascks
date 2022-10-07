@@ -30,3 +30,18 @@ s2=input()
 comparison (s1, s2) 
 
 #### Отчет: 0.55s / 28.51Mb
+
+
+#### Второй вариант:
+
+def comparison_1 (s1, s2):
+    a=s1.replace('one', '1').replace('zero', '0')
+    b=s2.replace('one', '1').replace('zero', '0')
+    if int(a,2)==int(b,2):
+        print('=')
+    elif int(a,2)>int(b,2):
+        print('>')
+    else:
+        print('<')
+        
+#### Отчет:  110ms/4.24Mb       
